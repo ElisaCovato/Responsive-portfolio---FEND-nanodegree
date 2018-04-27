@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300|The+Girl+Next+Door);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+body {
+	font-family: "Lato", sans-serif;
+	color: #676858;
+	font-weight: 300;
+}
+
+/*HEADER*/
+
+.name {
+	width: 100%;
+	font-family: "The Girl Next Door", sans-serif;
+	font-size: 150%;
+	color: MediumVioletRed;
+	font-size: 60px;
+	margin-top: 20px;
+}
+
+.title {
+	width: 100%;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 100%;
+	color: purple;
+	font-size: 24px;
+}
+
+.top-title {
+	text-align: center;
+}
+
+.title-logo {
+	margin-top: 20px;
+	height: 100%;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+@media screen and (min-width: 700px) {
+	.top-title {
+		display: flex;
+		justify-content: space-between;
+	}
+	.title-right {
+		text-align: right;
+	}
+}
+
+/*CENTRAL IMAGE */
+
+.centr-img-size {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+
+.centr-img-ratio {
+	position: relative;
+	overflow: hidden;
+	padding-top: 34.2%;
+}
+
+/* FEATURED WORKS*/
+
+.img-responsive {
+	margin: 0 auto;
+}
+
+.featured-title {
+	width: 100%;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 100%;
+	color: #520852;
+	font-size: 28px;
+}
+
+.works-title {
+	width: 100%;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 100%;
+	color: #520852;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.featured-img-size {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+
+.featured-img-ratio {
+	position: relative;
+	overflow: hidden;
+	padding-top: 51.3%;
+}
+
+.featured-img-bot {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.logo500-size {
+	display: inline-block;
+	width: 38px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+
+a {
+	color: MediumVioletRed;
+}
+
+a:hover {
+	color: MediumVioletRed;
+}
+
+@media screen and (max-width: 499px) {
+	.featured-size~.featured-size {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	.featured-size {
+		width: calc(50% - 10px);
+	}
+	.featured-size:nth-child(even) {
+		margin-left: 20px;
+	}
+	.featured-flex {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 989px) {
+	.featured-size:nth-child(2)~.featured-size {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (min-width: 990px) {
+	.featured-size {
+		width: calc((100% - (2*20px))/3);
+	}
+	.featured-size:nth-child(3n) {
+		margin-left: 20px;
+	}
+}
+
+/*FOOTER*/
+
+.foot-title {
+	width: 100%;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 100%;
+	color: purple;
+	font-size: 14px;
+	text-align: center;
+}
